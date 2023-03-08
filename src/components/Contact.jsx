@@ -14,7 +14,7 @@ const Contact = () => {
           <label htmlFor="name">Name:</label>
           <input
             required
-            className=" border px-3 py-1 rounded sm:w-36"
+            className=" border px-3 py-1 rounded w-[60%]"
             type="text"
             placeholder="Enter Your Name..."
           />
@@ -24,7 +24,7 @@ const Contact = () => {
           <label htmlFor="name">Email:</label>
           <input
             required
-            className=" border px-3 py-1 rounded "
+            className=" border px-3 py-1 rounded w-[60%]"
             type="text"
             placeholder="Enter Your Name..."
           />
@@ -33,7 +33,7 @@ const Contact = () => {
         <div className="">
           <label htmlFor="">Enter Message Here</label> <br />
           <textarea
-            className=" border px-3 py-1 rounded "
+            className=" border px-3 py-1 rounded w-[70%]"
             id="message"
             cols="30"
             rows="5"

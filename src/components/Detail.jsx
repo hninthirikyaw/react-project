@@ -102,7 +102,7 @@ const Detail = () => {
 
         
 
-        <h2 className="mb-20 flex gap-2 text-md font-semibold mt-2">
+        <h2 className="flex gap-2 text-md font-semibold mt-2 mb-[100px]">
           Watch on Youtube:
         <a href={recipe.strYoutube} target="_blank" className=" text-red-600 text-3xl">
             <BsYoutube  /> 
