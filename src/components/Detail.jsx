@@ -49,9 +49,9 @@ const Detail = () => {
     <div className=" h-[100vh] flex flex-wrap justify-around pt-[100px]  items-center ">
       <img
         src={recipe.strMealThumb}
-        className=" rounded-lg shadow-sm mt-3 w-[400px] mb-3"
+        className=" rounded-lg shadow-sm mx-3 w-[360px]"
       />
-      <div className="w-[400px]  text-left leading-6">
+      <div className="w-[400px] ml-5 mt-3 leading-6">
         <h2 className="mb-3 text-sky-800 text-2xl font-semibold tracking-wide">
           {recipe.strMeal}
         </h2>
