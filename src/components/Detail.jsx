@@ -9,6 +9,7 @@ const Detail = () => {
   const { id } = useParams();
   const [recipe, setRecipe] = useState({});
   const [ingredient,setIngredient] = useState([])
+  const [isOpen, setIsOpen] = useState(false)
 
   useEffect(()=>{
     const ingre = [
@@ -35,18 +36,9 @@ const Detail = () => {
     setRecipe(data.meals[0]);
   };
 
-  function showIngre() {
-    const ingred = document.querySelector(".ingred");
-    ingred.classList.remove("hidden", "flex", "justify-around");
-  }
-
-  function hide() {
-    const ingred = document.querySelector(".ingred");
-    ingred.classList.add("hidden");
-  }
-
   return (
-    <div className=" h-[100vh] flex flex-wrap justify-around pt-[100px]  items-center ">
+     <div>
+        <div className=" h-[100vh] flex flex-wrap justify-around pt-[100px]  items-center mb-10">
       <img
         src={recipe.strMealThumb}
         className=" rounded-lg shadow-sm mx-3 w-[360px]"
@@ -76,29 +68,26 @@ const Detail = () => {
             {recipe.strInstructions}
           </p>
         </details>
+       
         <button
-          onClick={() => showIngre()}
+          onClick={() => setIsOpen(!isOpen)}
           className="my-3 px-3 py-2 bg-lime-400 border rounded shadow ingre-btn"
         >
           Ingredients
         </button>
-        <div className="ingred hidden">
-          {ingredient.map((item) => {
+        {isOpen && (
+            <div>
+              {ingredient.map((item) => {
             return (
               <div key={item.id} >
                 <p className=" text-gray-700 text-sm inline-flex tracking-wide">
-                  {item.name}
+                  {item.name} 
                 </p>
               </div>
             );
           })}
-          <button
-            onClick={() => hide()}
-            className="py-1 px-2 bg-red-400 border my-2 rounded shadow hide-btn"
-          >
-            Hide
-          </button>
-        </div>
+            </div>
+        )}
 
         
 
@@ -109,8 +98,10 @@ const Detail = () => {
         </a>
         </h2>
       </div>
-      <Footer />
     </div>
+    <Footer />
+
+     </div>
   );
 };
 

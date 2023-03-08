@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
 import Footer from "./Footer";
-import HomeCard from "./HomeCard";
+import { BiCategory } from "react-icons/bi";
 import { BsArrowRightShort } from "react-icons/bs";
 const Home = () => {
   const [meal, setMeal] = useState({});
@@ -11,7 +11,7 @@ const Home = () => {
    
     const interval = setInterval(() => {
       fetchData();
-    }, 2000);
+    }, 2500);
     return ()=> clearInterval(interval);
   },[meal]);
 
@@ -38,23 +38,29 @@ const Home = () => {
         </div>
       </div>
      
-      <div className=" shadow-xl mt-3 flex flex-wrap  justify-around items-center p-3
-      ">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUSZlNAesgjRzKFcPtZgrKlxX8vqmJrxYtMQ&usqp=CAU" className=" rounded w-[400px]" />
-
-        <h2 className="ml-5 mt-3 font-semibold tracking-widest text-2xl mb-4 text-center">We have the most delicious meals for you!</h2>
-      </div>
+     
       <div className=" my-3">
-      <h1 className="ml-5 mt-3 font-semibold tracking-widest text-2xl mb-4 text-center">
+      <h1 className="  ml-5 mt-6 font-semibold tracking-widest text-2xl mb-4 text-center">
         Popular Recipe
       </h1>
-        <img
+       <div className=" flex flex-wrap justify-around items-center">
+       <img
           src={meal.strMealThumb}
-          className="rounded w-[300px] m-auto"
+          className="rounded w-[360px]"
         ></img>
-        <h2 className=" text-center text-xl font-semibold tracking-wide">
+       <div className="lg:w-[40%] sm:[w-100%]">
+       <h2 className=" lg:text-left sm:text-center text-xl font-semibold tracking-wide">
           {meal.strMeal}
         </h2>
+        <h2 className="mb-2 lg:text-left sm:text-center flex items-center gap-1 text-gray-700 text-xl font-semibold tracking-wide">
+          <span>
+            <BiCategory />
+          </span>
+          {meal.strCategory}
+        </h2>
+        
+       </div>
+       </div>
       </div>
       <div className=" flex justify-center items-center mt-10 ">
         <Link to={`/recipe`}>
