@@ -25,7 +25,7 @@ const Home = () => {
   };
 
   return (
-    <div className="  h-[100vh]">
+    <div className="pt-[50px]  h-[100vh]">
       <div className="home-bg w-[100%] h-[300px] ">
         <div className="py-24 mr-10">
           <h1 className=" text-sky-200 font-semibold tracking-wide text-4xl text-right  ">

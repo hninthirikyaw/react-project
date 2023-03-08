@@ -19,7 +19,7 @@ const Recipe = () => {
     console.log(recipe);
   };
   return (
-    <div className=" select-none ">
+    <div className=" pt-[100px] select-none ">
       <div className="ml-8 flex flex-wrap justify-around items-center">
         {recipe.map((item) => {
           return (

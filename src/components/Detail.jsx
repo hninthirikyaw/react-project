@@ -52,7 +52,7 @@ const Detail = () => {
         className=" rounded-lg shadow-sm mt-3 w-[400px] mb-3"
       />
       <div className="w-[400px]  text-left leading-6">
-        <h2 className="mb-3 text-gray-800 text-2xl font-semibold tracking-wide">
+        <h2 className="mb-3 text-sky-800 text-2xl font-semibold tracking-wide">
           {recipe.strMeal}
         </h2>
         <h2 className="mb-2 flex items-center gap-1 text-gray-700 text-xl font-semibold tracking-wide">
