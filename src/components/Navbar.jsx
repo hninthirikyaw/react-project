@@ -25,7 +25,7 @@ const Navbar = () => {
           </h2>
         </div>
       </NavLink>
-      <div className=" flex justify-center gap-8 items-center">
+      <div className=" flex justify-center gap-5 items-center">
         <NavLink to={`/about`}>
           <h2 className="ml-20 text-xl tracking-wide font-semibold hover:text-orange-300">
             About
@@ -40,7 +40,7 @@ const Navbar = () => {
           <input
             type="search"
             placeholder="Search recipe..."
-            className="text-gray-900  px-2 py-1 rounded shadow mt-2 mr-10" onChange={e=> setSearch(e.target.value) }
+            className="text-gray-900  px-2 py-1 rounded shadow mt-2 mr-[60px] w-36" onChange={e=> setSearch(e.target.value)}
           />
         </form>
       </div>

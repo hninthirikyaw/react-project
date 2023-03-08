@@ -14,14 +14,14 @@ const Contact = () => {
           <label htmlFor="name">Name:</label>
           <input
             required
-            className=" border px-3 py-1 rounded"
+            className=" border px-3 py-1 rounded sm:w-36"
             type="text"
             placeholder="Enter Your Name..."
           />
         </div>
 
         <div className=" flex gap-3 mb-3">
-          <label htmlFor="name">Email :</label>
+          <label htmlFor="name">Email:</label>
           <input
             required
             className=" border px-3 py-1 rounded "

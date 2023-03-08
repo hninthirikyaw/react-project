@@ -58,7 +58,7 @@ const Home = () => {
       </div>
       <div className=" flex justify-center items-center mt-10 ">
         <Link to={`/recipe`}>
-          <button className="mb-[70px] relative w-[200px] bg-sky-600  pl-1 py-2 rounded-md text-gray-200 font-semibold hover:bg-sky-900  ">
+          <button className="mb-[120px] relative w-[200px] bg-sky-600  pl-1 py-2 rounded-md text-gray-200 font-semibold hover:bg-sky-900  ">
             More Recipes
             <span className="absolute top-3 text-xl inline-flex ml-1 ">
               <BsArrowRightShort />
@@ -74,17 +74,3 @@ const Home = () => {
 
 export default Home;
 
-{
-  /* <div className=" flex flex-wrap justify-around items-center gap-6">
-{meal.map((item) => {
-  return (
-    <HomeCard
-      key={item.idMeal}
-      recipe={item.strMeal}
-      image={item.strMealThumb}
-      category={item.strCategory}
-    />
-  );
-})}
-</div> */
-}
