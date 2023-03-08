@@ -19,7 +19,7 @@ const Recipe = () => {
     console.log(recipe);
   };
   return (
-    <div className=" select-none  py-[100px]">
+    <div className=" select-none ">
       <div className="ml-8 flex flex-wrap justify-around items-center">
         {recipe.map((item) => {
           return (
@@ -33,7 +33,7 @@ const Recipe = () => {
         })}
       </div>
       
-     <div className=" flex justify-center mt-4">
+     <div className=" flex justify-center my-4">
      <a href="#" className=" px-3 py-2 hover:bg-blue-700 rounded bg-blue-500 text-white w-32 text-center">Back to Top</a>
      </div>
 

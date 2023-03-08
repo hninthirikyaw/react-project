@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div className=" h-[100vh]">
       <div
-        className="  py-[100px] px-6"
+        className="  pt-[110px] px-6"
       >
         <h1 className=" text-3xl tracking-wide text-gray-800 flex gap-3 items-center">
           <p className=" text-2xl text-sky-500  ">

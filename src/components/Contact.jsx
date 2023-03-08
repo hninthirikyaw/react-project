@@ -4,7 +4,7 @@ import Footer from "./Footer";
 import { BsFacebook, BsTwitter, BsWhatsapp, BsYoutube } from "react-icons/bs";
 const Contact = () => {
   return (
-    <div className="py-[100px] mx-3">
+    <div className="pt-[100px]">
       {/* <h2 className='heading text-center text-xl tracking-wide' ></h2> */}
       <h2 className="heading text-3xl text-center tracking-wide mb-4">
         Contact Form
@@ -31,7 +31,7 @@ const Contact = () => {
         </div>
 
         <div className="">
-          <label htmlFor="">Enter Message Here</label> <br />
+          <label htmlFor="" className=" block tracking-wide mb-2">Enter Message Here</label> 
           <textarea
             className=" border px-3 py-1 rounded w-[70%]"
             id="message"
@@ -57,7 +57,7 @@ const Contact = () => {
         </div>
       </form>
 
-      <div className=" mt-5 flex-col  shadow-2xl p-10 mx-auto w-[100%] ">
+      <div className=" mt-5 shadow-2xl p-10 w-[100%] ">
         <div className="address">
           <div className=" leading-7 my-3">
             <h2 className=" text-xl tracking-wide font-semibold">Our Address:</h2>
@@ -66,7 +66,7 @@ const Contact = () => {
               Phone: <a className=" underline" href="tel: +07865962795" target={"_blank"}>078 6596 2795</a>
             </p >
             <p className=" text-md tracking-wider font-semibold">
-              Email:{" "}
+              Email: 
               <a href="https://www.gmail.com" target={"_blank"}>
                 foodie.recipe@gmail.com
               </a>
@@ -82,21 +82,21 @@ const Contact = () => {
           <a
             href="https://www.facebook.com/"
             target={"_blank"}
-            className=" text-3xl text-blue-600 bg-gray-200 w-11 h-11 p-2 rounded-[100%] hover:text-blue-800 hover:bg-gray-300 cursor-pointer"
+            className=" text-3xl text-blue-600 bg-gray-100 w-11 h-11 p-2 rounded-[100%] hover:text-blue-800 hover:bg-gray-300 cursor-pointer"
           >
             <BsFacebook />
           </a>
           <a
             href="https://www.twitter.com/"
             target={"_blank"}
-            className=" text-3xl text-[#1C93E4] bg-gray-200 w-11 h-11 p-2 rounded-[100%] hover:text-[#1C93E499] hover:bg-gray-300 cursor-pointer"
+            className=" text-3xl text-[#1C93E4] bg-gray-100 w-11 h-11 p-2 rounded-[100%] hover:text-[#1C93E499] hover:bg-gray-300 cursor-pointer"
           >
             <BsTwitter />
           </a>
           <a
             href="https://www.whatsapp.com/"
             target={"_blank"}
-            className=" text-3xl text-[#25D366] bg-gray-200 w-11 h-11 p-2 rounded-[100%] hover:text-[#25D36699] hover:bg-gray-300 cursor-pointer"
+            className=" text-3xl text-[#25D366] bg-gray-100 w-11 h-11 p-2 rounded-[100%] hover:text-[#25D36699] hover:bg-gray-300 cursor-pointer"
           >
             <BsWhatsapp />
           </a>

@@ -25,7 +25,7 @@ const Home = () => {
   };
 
   return (
-    <div className=" py-[60px] h-[100vh]">
+    <div className="  h-[100vh]">
       <div className="home-bg w-[100%] h-[300px] ">
         <div className="py-24 mr-10">
           <h1 className=" text-sky-200 font-semibold tracking-wide text-4xl text-right  ">
@@ -58,7 +58,7 @@ const Home = () => {
       </div>
       <div className=" flex justify-center items-center mt-10 ">
         <Link to={`/recipe`}>
-          <button className="mb-[120px] relative w-[200px] bg-sky-600  pl-1 py-2 rounded-md text-gray-200 font-semibold hover:bg-sky-900  ">
+          <button className=" mb-4 relative w-[200px] bg-sky-600  pl-1 py-2 rounded-md text-gray-200 font-semibold hover:bg-sky-900  ">
             More Recipes
             <span className="absolute top-3 text-xl inline-flex ml-1 ">
               <BsArrowRightShort />
