@@ -46,12 +46,12 @@ const Detail = () => {
   }
 
   return (
-    <div className=" h-[100vh] flex flex-wrap justify-around  items-center py-[100px] px-3 mb-[100px]">
+    <div className=" h-[100vh] flex flex-wrap justify-around pt-[100px]  items-center ">
       <img
         src={recipe.strMealThumb}
         className=" rounded-lg shadow-sm mt-3 w-[400px] mb-3"
       />
-      <div className="w-[400px] mb-3 text-left leading-6">
+      <div className="w-[400px]  text-left leading-6">
         <h2 className="mb-3 text-gray-800 text-2xl font-semibold tracking-wide">
           {recipe.strMeal}
         </h2>
@@ -102,7 +102,7 @@ const Detail = () => {
 
         
 
-        <h2 className="flex gap-2 text-md font-semibold mt-2 mb-[100px]">
+        <h2 className="flex gap-2 text-md font-semibold mt-2 ">
           Watch on Youtube:
         <a href={recipe.strYoutube} target="_blank" className=" text-red-600 text-3xl">
             <BsYoutube  /> 
