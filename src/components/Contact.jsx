@@ -25,8 +25,8 @@ const Contact = () => {
           <input
             required
             className=" border px-3 py-1 rounded w-[60%]"
-            type="text"
-            placeholder="Enter Your Name..."
+            type="email"
+            placeholder="Enter Your Email..."
           />
         </div>
 

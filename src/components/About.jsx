@@ -20,7 +20,7 @@ const About = () => {
           <details className=" lg:w-[70%] sm:w-[100%] text-md tracking-wider leading-7 mb-3">
             <summary className="text-xl my-3 tracking-wider ">Do you know where our first place was?</summary>
             Actually, we started as a small online business and now it's become
-            a little big increased as a store. You can learn more about the
+            a little bit increased as a store. You can learn more about the
             recipe on{" "}
             <a href="https://en.wikipedia.org/wiki/Recipe" target={"_blank"} className="text-slate-900 font-semibold tracking-wider ">Wikipedia</a>
           </details>
@@ -30,7 +30,7 @@ const About = () => {
         <section className="lg:w-[70%] sm:w-[100%] text-md tracking-wider leading-8 mt-3">
           Our <abbr title="Little Recipe Store">LRS</abbr> was first built since
           2008 by recipe lovers 🍔 And we only care about customers' right and
-          our product quality. We promie that our service will be pleasant to
+          our product quality. We promise that our service will be pleasant to
           you all. Have a great day to you all!
         </section>
 
