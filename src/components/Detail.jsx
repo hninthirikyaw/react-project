@@ -37,8 +37,9 @@ const Detail = () => {
   };
 
   return (
-     <div>
-        <div className=" h-[100vh] flex flex-wrap justify-around pt-[100px]  items-center mb-10">
+ <div>
+      <div>
+        <div className=" mb-10 flex flex-wrap justify-around pt-[110px]  items-center ">
       <img
         src={recipe.strMealThumb}
         className=" rounded-lg shadow-sm mx-3 w-[360px]"
@@ -99,9 +100,11 @@ const Detail = () => {
         </h2>
       </div>
     </div>
-    <Footer />
 
      </div>
+    <Footer />
+
+ </div>
   );
 };
 
